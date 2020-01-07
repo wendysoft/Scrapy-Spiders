@@ -8,11 +8,9 @@ import datetime
 from urllib.parse import unquote
 
 # 所有发出的请求数据包都会被这个方法所处理
-# 所谓的处理，我们这里只是打印一下一些项；当然可以修改这些项的值直接给这些项赋值即可
 def request(flow):
     # 获取请求对象
     request = flow.request
-
     # # 实例化输出类
     # info = ctx.log.info
     # # 打印请求的url
@@ -29,7 +27,6 @@ def request(flow):
     # info(str(request.cookies))
 
 # 所有服务器响应的数据包都会被这个方法处理
-# 所谓的处理，我们这里只是打印一下一些项
 def response(flow):
     connect = pymysql.connect(
         host=settings.MYSQL_HOST,
@@ -73,15 +70,6 @@ def response(flow):
             user_nickname = ''.join(jsonpath(note, '$.note.user.nickname'))
             user_id = ''.join(jsonpath(note, '$.note.user.userid'))
             post_url = 'https://www.xiaohongshu.com/discovery/item/{}'.format(id)
-            # print(description)
-            # print(id)
-            # print(img_links)
-            # print( liked, liked_count)
-            # print(title)
-            # print(type)
-            # print(user_nickname)
-            # print(user_id)
-            # 最新 没有is_ads字段
             cursor.execute(
                 'insert ignore into xhs(id,keywords,title,type,liked,liked_count,description,img_links,user_nickname,user_id,insert_time,post_url) values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)',
                 (id,keywords,title,type,liked,liked_count,description,img_links,user_nickname,user_id,insert_time,post_url))

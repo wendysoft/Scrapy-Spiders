@@ -45,40 +45,11 @@ def slide_app(keywords):
         slide = slide + 1
         time.sleep(random.uniform(2, 5))
 
-    # ****************Connection aborted.*****************************************
-    # width = driver.get_window_size()['width']
-    # height = driver.get_window_size()['height']
-    # slide =0
-    # num = 0
-    #
-    # while slide < 10:
-    #     posts = driver.find_elements_by_id('com.xingin.xhs:id/b61')
-    #     print(len(posts))
-    #     try:
-    #         for i in range(len(posts)):
-    #             print('i:{}',format(i))
-    #             posts[i].click()
-    #             time.sleep(random.uniform(5,10))
-    #             # driver.swipe(width * 0.5, height * 0.75, width * 0.5, height * 0.25)
-    #             # pub_time = driver.find_element_by_id('com.xingin.xhs:id/bfy').text
-    #             # print(pub_time)
-    #             back = driver.find_element_by_id('com.xingin.xhs:id/i8').click()
-    #             time.sleep(random.uniform(2,5))
-    #         driver.swipe(width * 0.5, height * 0.75, width * 0.5, height * 0.25)
-    #     except Exception as e:
-    #         driver.swipe(width*0.5,height*0.75,width*0.5,height*0.25)
-    #     # driver.swipe(width * 0.5, height * 0.75, width * 0.5, height * 0.25)
-    #     slide = slide + 1
-    #     num = num + 4
-    #     time.sleep(random.uniform(5,10))
-    # **********************************************************************************
-
     driver.save_screenshot('endpos.png')
 
 
 def run():
-    # '一甜相机','水柚相机'太少
-    keywords_list = ['b612', '轻颜', 'zepeto', 'faceu']
+    keywords_list = ['哈士奇']
     for keywords in keywords_list:
         print('Start Spider...')
         print('Keywords: {}'.format(keywords))
