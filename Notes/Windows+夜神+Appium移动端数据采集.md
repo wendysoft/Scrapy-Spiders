@@ -23,7 +23,7 @@
 - 点击进入下载页面https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html。
 - 注册Oracle账号，下载windows ×86安装包并安装，默认安装位置为：`C:\Program Files (x86)\Java`。
 
-![2](\Windows+夜神+Appium模拟器文档.assets\2.PNG)
+![2](.\Windows+夜神+Appium模拟器文档.assets\2.PNG)
 
 - 添加环境变量。
 
@@ -58,7 +58,7 @@
 - 点击进入下载页面 https://www.androiddevtools.cn/。
 - 点击AndroidSDK工具，选择SDK Tools，下载安装包并安装。
 
-![3](\Windows+夜神+Appium模拟器文档.assets\3.png)
+![3](.\Windows+夜神+Appium模拟器文档.assets\3.png)
 
 - 添加环境变量。
 
@@ -119,7 +119,7 @@
 - 将Android SDK目录下`C:\Users\xbei\AppData\Local\Android\android-sdk\platform-tools`中的`adb.exe`复制两份，其中一份改名为`nox_adb.exe`。
 - 将复制的`adb.exe`和改名的`nox_adb.exe`复制到夜神模拟器目录`D:\Spider\Nox\bin`下，覆盖原文件。
 
-![4](\Windows+夜神+Appium模拟器文档.assets\4-1591756541628.PNG)
+![4](.\Windows+夜神+Appium模拟器文档.assets\4-1591756541628.PNG)
 
 - 进入夜神模拟器，打开`设置`，连点五次`关于平板电脑`中的`版本号`，将出现`开发者选项`，进入`开发者选项`，勾选`USB调试`。
 
@@ -168,7 +168,7 @@
 
 - 点击右上角的放大镜进行配置。
 
-![6](\Windows+夜神+Appium模拟器文档.assets\6.PNG)
+![6](.\Windows+夜神+Appium模拟器文档.assets\6.PNG)
 
 - Appium的配置参数包括以下内容：
   - `platformName`：系统
@@ -200,11 +200,11 @@
 
 - 在Desired Capabilities处填写参数，点击`Start Session`。
 
-![7](\Windows+夜神+Appium模拟器文档.assets\7-1591758717236.PNG)
+![7](.\Windows+夜神+Appium模拟器文档.assets\7-1591758717236.PNG)
 
 - 可在Appium中进行元素定位，找到需要操作（点击、传参等）的元素，进行自动化操作。
 
-![8](\Windows+夜神+Appium模拟器文档.assets\8-1591758865585.PNG)
+![8](.\Windows+夜神+Appium模拟器文档.assets\8-1591758865585.PNG)
 
 ## 编写数据处理+自动化程序
 
@@ -278,7 +278,7 @@ def slide_app(page):
 
 - 在配置夜神模拟器的网络代理时，指定不同端口（如8080/8081）。
 
-![9](\Windows+夜神+Appium模拟器文档.assets\9.PNG)
+![9](.\Windows+夜神+Appium模拟器文档.assets\9.PNG)
 
 - 在启动mitmproxy时，指定不同端口和不同数据处理程序`extract.py`。
 

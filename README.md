@@ -2,6 +2,10 @@
 
 ##### 【请勿商用！请勿商用！请勿商用！】
 
+### 环境部署
+
+- Windows+夜神+Appium：[环境部署]([https://github.com/RekiLiu/Scrapy-Spiders/blob/master/Notes/Windows%2B%E5%A4%9C%E7%A5%9E%2BAppium%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86.md](https://github.com/RekiLiu/Scrapy-Spiders/blob/master/Notes/Windows%2B夜神%2BAppium移动端数据采集.md))
+
 ### 音乐爬虫
 
 - 网易云音乐 Neteasemusic
