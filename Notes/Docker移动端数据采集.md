@@ -172,7 +172,8 @@
 - 此时由于mitmproxy证书还未传入手机，虽然在mitmdump界面能够看到流量，到那时https流量无法被解析：
 
   <img src=".\Docker App文档.assets\image-20200526113528917.png" alt="image-20200526113528917" style="zoom:50%;" />
-
+=======
+  ![image-20200526113528917](.\Docker App文档.assets\image-20200526113528917.png)
 ##### 安装证书
 
 - centos安装根证书：
