@@ -25,7 +25,6 @@
 
 ![2](https://github.com/RekiLiu/Scrapy-Spiders/blob/master/Notes/Windows+%E5%A4%9C%E7%A5%9E+Appium%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%96%87%E6%A1%A3.assets/2.PNG?raw=true)
 
-![2](.\Windows+夜神+Appium模拟器文档.assets\2.PNG)
 - 添加环境变量。
 
   - JAVA_HOME
@@ -61,7 +60,6 @@
 
 ![3](https://github.com/RekiLiu/Scrapy-Spiders/blob/master/Notes/Windows+%E5%A4%9C%E7%A5%9E+Appium%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%96%87%E6%A1%A3.assets/3.png?raw=True)
 
-![3](.\Windows+夜神+Appium模拟器文档.assets\3.png)
 - 添加环境变量。
 
   - ANDROID_HOME
@@ -123,7 +121,6 @@
 
 ![4](https://github.com/RekiLiu/Scrapy-Spiders/blob/master/Notes/Windows+%E5%A4%9C%E7%A5%9E+Appium%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%96%87%E6%A1%A3.assets/4-1591756541628.PNG?raw=True)
 
-![4](.\Windows+夜神+Appium模拟器文档.assets\4-1591756541628.PNG)
 - 进入夜神模拟器，打开`设置`，连点五次`关于平板电脑`中的`版本号`，将出现`开发者选项`，进入`开发者选项`，勾选`USB调试`。
 
 ##### mitmproxy与夜神模拟器建立连接
@@ -171,7 +168,7 @@
 
 - 点击右上角的放大镜进行配置。
 
-![6](.\Windows+夜神+Appium模拟器文档.assets\6.PNG)
+![6](https://github.com/RekiLiu/Scrapy-Spiders/blob/master/Notes/Windows+%E5%A4%9C%E7%A5%9E+Appium%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%96%87%E6%A1%A3.assets/6.PNG?raw=True)
 
 - Appium的配置参数包括以下内容：
   - `platformName`：系统
@@ -205,10 +202,9 @@
 
 ![7](https://github.com/RekiLiu/Scrapy-Spiders/blob/master/Notes/Windows+%E5%A4%9C%E7%A5%9E+Appium%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%96%87%E6%A1%A3.assets/7-1591758717236.PNG?raw=True)
 
-![7](.\Windows+夜神+Appium模拟器文档.assets\7-1591758717236.PNG)
 - 可在Appium中进行元素定位，找到需要操作（点击、传参等）的元素，进行自动化操作。
 
-![8](.\Windows+夜神+Appium模拟器文档.assets\8-1591758865585.PNG)
+![8](https://github.com/RekiLiu/Scrapy-Spiders/blob/master/Notes/Windows+%E5%A4%9C%E7%A5%9E+Appium%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%96%87%E6%A1%A3.assets/8-1591758865585.PNG?raw=True)
 
 ## 编写数据处理+自动化程序
 
