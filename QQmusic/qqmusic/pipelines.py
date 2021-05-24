@@ -18,7 +18,7 @@ class QqmusicPipeline(object):
         self.cursor = self.connect.cursor()
 
     def process_item(self, item, spider):
-        if spider.name == 'qqmusic':
+        if 'comment_id' not in item:
             self.cursor.execute(
                 '''insert ignore into playlist (playlist_id, playlist_name, playlist_cat, playlist_tag, playlist_tagids,
                  playlist_author, playlist_author_qq, playlist_pubtime, playlist_songids, playlist_songnum, playlist_desc,
@@ -49,7 +49,7 @@ class QqmusicPipeline(object):
                 '''insert ignore into lyric(music_id, music_name, lyric) values (%s,%s,%s)''',
                 (item['music_id'],item['music_name'],item['lyric'])
             )
-        elif spider.name == 'qqcomment':
+        else:
             self.cursor.execute(
                 '''insert ignore into comment(music_id, comment_id, is_hot, is_hot_cmt, is_medal, is_stick, is_praise, user_uin, user_nickname,
                 user_avatar_link, content, pub_time, liked) values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)''',

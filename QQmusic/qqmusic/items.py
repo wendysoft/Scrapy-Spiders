@@ -42,7 +42,7 @@ class QqmusicItem(scrapy.Item):
     pass
 
 
-class QqcommentItem(scrapy.Item):
+class CommentItem(scrapy.Item):
     music_id = scrapy.Field()
     comment_id = scrapy.Field()
     is_hot = scrapy.Field()

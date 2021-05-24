@@ -13,6 +13,7 @@ class CategoryList():
         return scene_list
 
     def get_mood_list(self):
+        # mood_list = ['怀旧']
         mood_list = ['怀旧', '清新', '浪漫', '伤感', '治愈', '放松', '孤独', '感动', '兴奋', '快乐', '安静', '思念']
         return mood_list
 

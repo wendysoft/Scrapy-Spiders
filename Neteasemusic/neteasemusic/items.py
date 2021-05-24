@@ -22,7 +22,6 @@ class NeteasemusicItem(scrapy.Item):
     playlist_fav_count = scrapy.Field()
     playlist_share_count = scrapy.Field()
     playlist_comment_count = scrapy.Field()
-
     music_id = scrapy.Field()
     music_url = scrapy.Field()
     music_name = scrapy.Field()
@@ -32,4 +31,15 @@ class NeteasemusicItem(scrapy.Item):
     album_id = scrapy.Field()
     album_name = scrapy.Field()
     lyric = scrapy.Field()
+    music_crawltime = scrapy.Field()
+    playlist_crawltime = scrapy.Field()
     pass
+
+class CommentItem(scrapy.Item):
+    # define the fields for your item here like:
+    comment_id = scrapy.Field()
+    music_id = scrapy.Field()
+    playlist_id = scrapy.Field()
+    user_id = scrapy.Field()
+    comment_content = scrapy.Field()
+    comment_like_count = scrapy.Field()
