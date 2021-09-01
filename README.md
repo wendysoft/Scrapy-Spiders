@@ -5,7 +5,15 @@
 ### 环境部署
 
 - Windows+夜神模拟器+Appium：[环境部署](https://github.com/RekiLiu/Scrapy-Spiders/blob/master/Notes/Windows%2B%E5%A4%9C%E7%A5%9E%2BAppium%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86.md)
-- ScrapydWeb集群管理：[ScrapydWeb](https://github.com/my8100/scrapydweb/blob/master/README_CN.md)
+- ScrapydWeb集群管理：[ScrapydWeb](https://github.com/my8100/scrapydweb/blob/master/README_CN.md) 
+
+### adb连接真机  
+- adb driver installer功能：https://adbdriver.com/downloads/ 下载完成后，双击ADBDriverInstaller.exe，刷新后，会出现已连接的设备，点击Install执行安装  
+- 快捷键win+R，输入cmd打开doc窗口。命令行输入：adb devices，查看设备是否连接 
+- wifi连接真机步骤：  
+-- ①Android设备和需要运行adb的电脑连接同一个wifi。 
+-- 将设备与电脑通过 USB 线连接，可通过命令 adb devices 查看是否连接成功。  
+-- adb监听端口5555，命令行输入：adb tcpip 5555。
 
 ### 音乐爬虫
 
